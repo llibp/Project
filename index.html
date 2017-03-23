@@ -1,5 +1,61 @@
+repository 仓库<br>
+star 收藏<br>
+Fork 复制克隆 <br>
+Pull request <br>
+Watch 关注<br>
+Issue 事务卡片<br><br>
 
-17620060866
+页<br>
+GitHub 主页<br>
+仓库主页<br>
+个人主页 <br><br>
+
+Working Directory <br>
+添加、编辑、修改文件等<br>
+Git Repository 最终确定的文件保存到仓库，成为一个新的版本，并且对他人可见<br>
+暂存区<br>
+经过修改的文件最后统一提交到git仓库中<br><br>
+
+git status<br>
+git add test.c<br>
+git status<br><br>
+git commit -m "提交描述"<br>
+基本信息设置<br>
+设置用户名<br>
+设置用户名邮箱<br>
+git config --global user.email "你的邮箱"<br>
+git config --global user.name "你的名字"<br>
+
+查看设置<br>
+git config --list<br>
+新建一个仓库初始化一个仓库<br>
+git init<br>
+在文件内初始化git（创建git仓库）<br>
+创建并上传一个文件到仓库<br>
+mkdir test<br>
+cd test<br>
+touch main.c<br>
+git status<br>
+git add main.c<br>
+git status<br>
+git commit -m 'add main.c'<br><br>
+
+
+vim main.c<br>
+i<br>
+esc :wq<br>
+cat main.c<br><br>
+
+从仓库删除文件<br>
+rm -rf main.c<br>
+git rm main.c<br>
+git commit -m 'delete main.c'<br>
+<br>
+//从 clone or download 获取仓库地址<br>
+https://github.com/obillibo/Project.git<br>
+从地址克隆仓库<br>
+git clone  https://github.com/llibp/Project.git<br>
+
 
 <h1>一. 通用命令:</h1>
 
@@ -32,7 +88,7 @@
 　　<h4>* 卸载并删除配置文件: dpkg -P |--purgepackage</h4>
 　　<h4>* 如果安装一个包时。说依赖某些库。 可以先apt-get install somelib...</h4>
 　　<h4>* 查看软件包安装内容 :dpkg -L package</h4>
-　　<h4>* 查看文件由哪个软件包提供: dpkg -Sfilename</h4></h4>
+　　<h4>* 查看文件由哪个软件包提供: dpkg -Sfilename</h4>
 　　<h4>* 另外 dpkg还有 dselect和aptitude 两个frontend.</h4>
 
 　　<h4>2. apt</h4>
